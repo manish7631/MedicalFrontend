@@ -1,0 +1,49 @@
+{ 
+  "patient": [
+    {
+      "id": 1,
+      "name": "Manoj",
+      "image": "https://i.kinja-img.com/gawker-media/image/upload/q_75,w_410,h_231/c498e80f57d5913a74fbf3d5dababf54.JPG",
+      "category": "male",
+      "age": 34,
+      "medicine": "bikosolue",
+      "quantity": 5
+    },
+    {
+      "id": 2,
+      "name": "rahul",
+      "image": "https://asopa.typepad.com/.a/6a00d83454f2ec69e20282e12ac3ef200b-pi",
+      "category": "male",
+      "age": 24,
+      "medicine": "bikosolue",
+      "quantity": 6
+    },
+    {
+      "id": 3,
+      "name": "Manisha rani",
+      "image": "https://www.aljazeera.com/wp-content/uploads/2021/04/GettyImages-1232453247.jpg?resize=770%2C513",
+      "category": "female",
+      "age": 22,
+      "medicine": "bikosolue",
+      "quantity": 2
+    },
+    {
+      "id": 4,
+      "name": "raushan",
+      "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-346048,resizemode-1,msid-87752354/industry/healthcare/biotech/healthcare/how-covid-19-became-a-boon-for-a-battered-indian-hospital.jpg",
+      "category": "male",
+      "age": 24,
+      "medicine": "bikosolue",
+      "quantity": 5
+    },
+    {
+      "name": "sandhya kumari",
+      "category": "female",
+      "age": "15",
+      "medicine": "pentasulful",
+      "image": "https://c8.alamy.com/comp/EXC3AE/1-indian-girl-patient-hospital-illness-EXC3AE.jpg",
+      "quantity": "8",
+      "id": 5
+    }
+  ]
+}
