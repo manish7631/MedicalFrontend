@@ -15,22 +15,17 @@ import { getMedicineData } from '../redux/AppReducer/action'
 export const PatientDetails = () => {
     const { id } = useParams()
     const [users, setUsers] = useState({})
-    // const medicine = useSelector((state) => state.AppReducer.medicine)
-    // const dispatch = useDispatch()
+
 
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/patient/${id}`).then((data) => {
+        axios.get(`https://health-care-medical.herokuapp.com/patient/${id}`).then((data) => {
             setUsers(data.data)
 
         })
     }, [])
 
-    // useEffect(() => {
-    //     dispatch(getMedicineData())
-    // }, [])
 
-    // console.log("medicine", medicine)
 
     return (
         <>
@@ -44,20 +39,20 @@ export const PatientDetails = () => {
                 <Box >
                     <Flex padding-left={"30px"} justifyContent={"space-between"}>
                         <Box width={"50%"} height="200px" >
-                            <Text fontSize="3xl" >Name:-{users.name}</Text>
+                            <Text fontSize="3xl" >Name:-{users.Name}</Text>
 
 
                         </Box>
                         <Box>
-                            <Text fontSize="4xl">Age:-{users.age}</Text>
+                            <Text fontSize="4xl">Email:-{users.Email}</Text>
                         </Box>
                         <Box>
-                            <Text fontSize="4xl" >Gender:-{users.category}</Text>
+                            <Text fontSize="4xl" >State:-{users.State}</Text>
                         </Box>
                     </Flex>
 
                     <Box>
-                        <Text fontSize="4xl" >Medicine:-{users.medicine}</Text>
+                        <Text fontSize="4xl" >Mobile:-{users.Mobile}</Text>
                     </Box>
 
 

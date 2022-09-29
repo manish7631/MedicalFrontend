@@ -75,10 +75,10 @@ export const Home = () => {
                         <Tr>
                             <Th>Id</Th>
                             <Th>Name</Th>
-                            <Th>Age</Th>
-                            <Th>Gender</Th>
-                            <Th>Medicine</Th>
-                            <Th>Quantity</Th>
+                            <Th>Email</Th>
+                            <Th>State</Th>
+                            <Th>Mobile</Th>
+
 
                         </Tr>
                     </Thead>
@@ -89,14 +89,13 @@ export const Home = () => {
 
                             return (<Tr key={uuidv4()} className="row">
                                 <Td className="first_name">{index + 1}</Td>
-                                <Td className="first_name">{data.name}</Td>
-                                <Td className="email">{data.age}</Td>
-                                <Td className="gender">{data.category}</Td>
-                                <Td className="age">{data.medicine}</Td>
-                                <Td className="age">{data.quantity}</Td>
-                                <Td><Link to={`/${data.id}`}><button>View</button></Link></Td>
+                                <Td className="first_name">{data.Name}</Td>
+                                <Td className="email">{data.Email}</Td>
+                                <Td className="state">{data.State}</Td>
+                                <Td className="mobile">{data.Mobile}</Td>
+                                <Td><Link to={`/${data._id}`}><button>View</button></Link></Td>
                                 <Td><button onClick={() => {
-                                    handleChange1(data.id)
+                                    handleChange1(data._id)
                                 }}>Delete</button></Td>
                             </Tr>
                             );

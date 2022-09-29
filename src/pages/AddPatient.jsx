@@ -32,7 +32,7 @@ export const AddPatient = () => {
     const navigate = useNavigate()
     const handleSubmit = (e) => {
         e.preventDefault()
-        fetch("http://localhost:8080/patient", {
+        fetch("https://health-care-medical.herokuapp.com/patient", {
             method: "POST",
             headers: {
                 "content-type": "application/json"

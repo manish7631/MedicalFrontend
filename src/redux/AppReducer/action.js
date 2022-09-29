@@ -5,7 +5,7 @@ import axios from "axios"
 
 const getData = (params) => (dispatch) => {
     dispatch({type:types.GET_DATA_REQUEST})
-    axios.get(`http://localhost:8080/patient?_page=${params}&_limit=2`, params).then((r) => dispatch({type:types.GET_DATA_SUCCESS, payload:r.data})).catch(e => dispatch({type:types.GET_DATA_FAILURE}))
+    axios.get(`https://health-care-medical.herokuapp.com/patient`, params).then((r) => dispatch({type:types.GET_DATA_SUCCESS, payload:r.data})).catch(e => dispatch({type:types.GET_DATA_FAILURE}))
     
 }
 
